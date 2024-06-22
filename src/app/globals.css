@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Дополнительные глобальные стили могут быть добавлены здесь */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+.text-primary {
+  color: #1a202c; /* Темный оттенок */
+}
+
+.text-secondary {
+  color: #4a5568; /* Средний оттенок */
+}
+
+.text-accent {
+  color: #718096; /* Светлый оттенок */
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  border: 2px solid #0056b3;
+}
+
+.button:active {
+  background-color: #0056b3;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.button-primary {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .button-primary {
+    width: 100%;
+  }
+}
+
+.rounded-custom {
+  border-radius: 12px;
+}
+
+.image-button img {
+  height: 20px; /* Можно изменить размер */
+  margin-right: 8px; /* Отступ между иконками */
+}
+
+.image-button {
+  border: 1px solid #0056b3;
+  border-radius: 12px;
+  display: flex;
+  align-items: center; /* Выравнивание по центру */
+  justify-content: center; /* Центрирование содержимого */
+  padding: 16px 16px; /* Внутренние отступы для кнопки */
+  gap: 8px; /* Расстояние между иконками */
+}
+.image-button:hover {
+  background-color:#0057b311;
+}

@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 /* Дополнительные глобальные стили могут быть добавлены здесь */
-body {
+html, body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: #f9f9f9;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 .text-primary {
   color: #1a202c; /* Темный оттенок */

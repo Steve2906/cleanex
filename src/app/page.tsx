@@ -49,11 +49,14 @@ const HomePage: React.FC = () => {
           >
             Продолжить
           </button>
+          <div className="text-center text-sm text-gray-500 p-4">
+              <strong>CleanEx Beta.</strong> Хотите получать платежи? Напишите нам на почту <a href="mailto:cleanex-info@gmail.com" className="text-blue-500">cleanex-info@gmail.com</a> и станьте участником бета-тестирования.
+          </div>
         </div>
       )}
       {step === 2 && (
-        <div className="w-full max-w-md p-4">
-          <div className="flex items-center mb-4">
+        <div className="w-full h-full max-w-md p-4">
+          <div className="flex justify-start mb-4 w-full">
             <button onClick={() => setStep(1)} className="flex items-center text-blue-500">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
